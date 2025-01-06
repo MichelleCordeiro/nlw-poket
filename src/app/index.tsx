@@ -1,4 +1,5 @@
 import { View } from 'react-native'
+import { router } from 'expo-router'
 import { IconPlus } from '@tabler/icons-react-native'
 
 import { Welcome } from '@/components/welcome'
@@ -17,7 +18,7 @@ export default function Index() {
       <Welcome />
       <Steps />
 
-      <Button isLoading={false}>
+      <Button isLoading={false} onPress={() => router.navigate('/home')}>
         {/* <Button style={{ backgroundColor: 'orange' }}> */}
         <Button.Title>Começar</Button.Title>
         {/* <Button.Icon icon={IconPlus} /> */}
