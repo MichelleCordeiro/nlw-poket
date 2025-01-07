@@ -3,40 +3,44 @@ import { colors, fontFamily } from '@/styles/theme'
 
 export const s = StyleSheet.create({
   container: {
-    backgroundColor: colors.gray[100]
+    width: '100%',
+    height: 120,
+    padding: 8,
+    borderWidth: 1,
+    borderColor: colors.gray[100],
+    borderRadius: 12,
+    flexDirection: 'row',
+    gap: 16,
+    alignItems: 'center'
   },
   image: {
-    gap: 12,
-    padding: 24,
-    paddingBottom: 100
+    width: 116,
+    height: 104,
+    borderRadius: 8,
+    backgroundColor: colors.gray[200]
   },
   content: {
-    width: 80,
-    height: 4,
-    backgroundColor: colors.gray[300]
+    flex: 1,
+    gap: 4
   },
   name: {
-    backgroundColor: colors.gray[600],
-    fontSize: 16,
-    fontFamily: fontFamily.regular,
-    marginBottom: 16
+    fontSize: 14,
+    fontFamily: fontFamily.medium,
+    color: colors.gray[600]
   },
   description: {
-    backgroundColor: colors.gray[600],
-    fontSize: 16,
+    fontSize: 12,
     fontFamily: fontFamily.regular,
-    marginBottom: 16
+    color: colors.gray[500]
   },
   footer: {
-    backgroundColor: colors.gray[600],
-    fontSize: 16,
-    fontFamily: fontFamily.regular,
-    marginBottom: 16
+    flexDirection: 'row',
+    gap: 7,
+    marginTop: 10
   },
   tickets: {
-    backgroundColor: colors.gray[600],
-    fontSize: 16,
+    fontSize: 12,
     fontFamily: fontFamily.regular,
-    marginBottom: 16
+    color: colors.gray[400]
   }
 })

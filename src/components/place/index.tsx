@@ -32,5 +32,5 @@ export function Place({ data, ...rest }: Props) {
         </View>
       </View>
     </TouchableOpacity>
-  );
+  )
 }
